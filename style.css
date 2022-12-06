@@ -1,0 +1,220 @@
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+
+  @font-face {
+    font-family: "Poppins_Bold";
+    src:url("fonts/Poppins-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "Poppins_Light";
+    src:url("fonts/Poppins-Light.ttf");
+  }
+
+  @font-face {
+    font-family: "Poppins_Medium";
+    src:url("fonts/Poppins-Medium.ttf");
+  }
+
+@media screen and (min-width:800px){
+html{
+  height: 100vh;
+  width: 100vw;
+}
+
+
+  body{
+    margin: 0% 20% 0% 20%;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(300px, 1fr));
+  }
+
+  h3{
+    text-align: center;
+    font-size: 25px;
+    color: hsl(229, 6%, 66%);
+    font-weight: lighter;
+    font-family: "Poppins_Light";
+    margin-bottom: 0px;
+  }
+
+  h2{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-weight: lighter;
+    font-family: "Poppins_Bold";
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+
+  h4{
+    text-align: center;
+    font-size: 25px;
+    color: hsl(229, 6%, 66%);
+    font-weight: lighter;
+    font-family: "Poppins_Light";
+    margin-top: 10px;
+  }
+
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(minmax(100px, 1fr));
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px;
+    }
+
+    .card_teal{
+      border-top: 6px solid hsl(180, 62%, 55%);
+      height: 213px;
+      margin-top: 140px;
+      margin-right: 20px;
+    }
+
+    .card_red{
+      border-top: 6px solid hsl(0, 78%, 62%);
+    }
+
+    .card_yellow{
+      border-top: 6px solid hsl(34, 97%, 64%);
+    }
+
+    .card_blue{
+      border-top: 6px solid hsl(212, 86%, 64%);
+      height: 213px;
+      margin-top: 140px;
+      margin-left: 20px;
+    }
+
+
+    .card_name{
+      font-family: "Poppins_Bold";
+      color: black;
+      font-size: 25px;
+      margin-bottom: 0px;
+    }
+
+    .card_description{
+      font-family: "Poppins_Medium";
+      color: hsl(229, 6%, 66%);
+      font-size: 15px;
+
+    }
+
+  img{
+    width: 4em;
+    height: 4em;
+    margin: 10px 20px 0px 80%;
+  }
+
+  header{
+    grid-area: 1/2/2/3;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .col1{
+    grid-area: 2/1/5/2;
+  }
+
+  .col2{
+    grid-area: 2/2/4/3;
+  }
+}
+
+.col3{
+  grid-area: 2/3/5/4;
+}
+
+footer{
+  grid-area: 4/2/5/3;
+}
+
+
+
+@media screen and (max-width: 800px){
+
+body{
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+h3{
+  text-align: center;
+  font-size: 25px;
+  color: hsl(229, 6%, 66%);
+  font-weight: lighter;
+  font-family: "Poppins_Light";
+  margin-bottom: 0px;
+}
+
+h2{
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  font-weight: lighter;
+  font-family: "Poppins_Bold";
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+h4{
+  text-align: center;
+  font-size: 25px;
+  color: hsl(229, 6%, 66%);
+  font-weight: lighter;
+  font-family: "Poppins_Light";
+  margin-top: 10px;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(minmax(100px, 1fr));
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px;
+  }
+
+  .card_teal{
+    border-top: 6px solid hsl(180, 62%, 55%);
+  }
+
+  .card_red{
+    border-top: 6px solid hsl(0, 78%, 62%);
+  }
+
+  .card_yellow{
+    border-top: 6px solid hsl(34, 97%, 64%);
+  }
+
+  .card_blue{
+    border-top: 6px solid hsl(212, 86%, 64%);
+  }
+
+
+  .card_name{
+    font-family: "Poppins_Bold";
+    color: black;
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+
+  .card_description{
+    font-family: "Poppins_Medium";
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+
+  }
+
+img{
+  width: 4em;
+  height: 4em;
+  margin: 10px 10px 0px 80%;
+}
+}
